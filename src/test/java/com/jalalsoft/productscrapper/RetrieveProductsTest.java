@@ -22,10 +22,9 @@ public class RetrieveProductsTest {
 	@Before
 	public void setUp() throws Exception {
 		
-		props = new ScrapperApp().loadProps("/test.properties");
+		props = ScraperApp.loadProps("/test.properties");
 
 		productURL = props.getProperty(productURLKey);
-		//productURL = "http://hiring-tests.s3-website-eu-west-1.amazonaws.com/2015_Developer_Scrape/5_products.html";
 		groceryProductScraper = new GroceryProductScraper(props);
 		timeout = 3000;
 	}

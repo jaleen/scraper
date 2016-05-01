@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 /**
- * Hello world!
+ * Main application executor
  *
  */
-public class ScrapperApp 
+public class ScraperApp 
 {
     public static void main( String[] args ) throws IOException
     {
@@ -19,7 +19,7 @@ public class ScrapperApp
     	{
     		productListUrl = args[0];
     	}
-        Properties prop = loadProps("application.properties");
+        Properties prop = loadProps("/application.properties");
         
         ProductScraper scrapper = new GroceryProductScraper(prop);
         
@@ -29,10 +29,16 @@ public class ScrapperApp
         
     }
     
+    /**
+     * Load properties from the give file
+     * @param fileName
+     * @return
+     * @throws IOException
+     */
     public static Properties loadProps(String fileName) throws IOException
     {
     	Properties prop = new Properties();
-    	try(InputStream in = ScrapperApp.class.getClass().getResourceAsStream(fileName)){
+    	try(InputStream in = ScraperApp.class.getClass().getResourceAsStream(fileName)){
     		prop.load(in);
     	}
     	

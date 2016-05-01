@@ -5,7 +5,7 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple ScrapperApp.
+ * Unit test for simple ScraperApp.
  */
 public class AppTest 
     extends TestCase
