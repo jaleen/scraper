@@ -11,12 +11,12 @@ and then:
 		$java -jar target\scrapper-0.0.1-SNAPSHOT.jar
 
 or: 
-
+	
 		$java -jar target\crapper-0.0.1-SNAPSHOT.jar > products.json
 
 You can provide different url for different environments using this:
 
 		java -jar target\scrapper-0.0.1-SNAPSHOT.jar {fully qualified url to the products page}
 
-You can copy paste the JSON into this [JSON Viewer](http://jsonviewer.stack.hu/) for ease of use.
+You may also want to copy paste the JSON into this [JSON Viewer](http://jsonviewer.stack.hu/).
 
