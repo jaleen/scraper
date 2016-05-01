@@ -11,6 +11,7 @@ and then:
 		$java -jar target\scrapper-0.0.1-SNAPSHOT.jar
 
 or: 
+
 		$java -jar target\crapper-0.0.1-SNAPSHOT.jar > products.json
 
 You can provide different url for different environments using this:
